@@ -44,7 +44,7 @@ function Sidebar() {
             <div className="sidebar__header">
                 <div className="sidebar__info">
 
-                    <h2>vs apps</h2>
+                   <div className="sidebar__icon"><h2><img className="sidebar__info__img" src="https://thumbs.bfldr.com/at/pl546j-7le8zk-afym5u/v/3033396?expiry=1621077639&fit=bounds&height=800&sig=ZTY4MjhhMzQ0ZDVkZDVkZjc0ZWE2YmI4NjA0MGQ5Y2E3ZGY5ZDM5Yg%3D%3D&width=1100"></img>My Slack</h2></div> 
                     <h3>
                         <FiberManualRecordIcon />
                         {user?.displayName}
@@ -58,7 +58,7 @@ function Sidebar() {
                 <SidebarOption title = {channel.name} id={channel.id} />
             ))}
             </div>
-            
+            <hr/>
             <SidebarOption Icon={InsertCommentIcon} title="Threads"/>
             <SidebarOption Icon={InboxIcon} title="Mentions & reactions"/>
             <SidebarOption Icon={DraftsIcon} title="Saved items"/>
